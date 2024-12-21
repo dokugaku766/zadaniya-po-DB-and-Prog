@@ -42,10 +42,10 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите первое число: ");
-        int a = scan.nextInt();
+        int q = scan.nextInt();
         System.out.print("Введите первое число: ");
-        int b = scan.nextInt();
-        int sum = a + b;
+        int w = scan.nextInt();
+        int sum = q + w;
         System.out.print("Сумма ваших чисел равна: " + sum);
         scan.close();
     }
@@ -55,12 +55,12 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите первое число: ");
-        double one = scan.nextDouble();
+        double q = scan.nextDouble();
         System.out.print("Введите первое число: ");
-        double two = scan.nextDouble();
+        double w = scan.nextDouble();
         System.out.print("Введите первое число: ");
-        double three = scan.nextDouble();
-        double average = (one + two + three) / 3;
+        double e = scan.nextDouble();
+        double average = (q + w + e) / 3;
         System.out.print("Среднее арифметическое: " + average);
         scan.close();
     }
@@ -106,14 +106,14 @@ public class Prak1 {
     public static void prost7() {
         System.out.print("\n-+-Вы запустили седьмое задание-+-\n");
         Scanner scan = new Scanner(System.in);
-        boolean tf = true;
+        boolean a = true;
         System.out.print("Введите число: ");
-        int prosto = scan.nextInt();
-        for (int i = 2; i <= Math.sqrt(prosto); i++) {
-            if (prosto % i == 0) tf = false;
+        int b = scan.nextInt();
+        for (int i = 2; i <= Math.sqrt(b); i++) {
+            if (b % i == 0) a = false;
         }
 
-        if (tf == true) System.out.print("Число простое");
+        if ( a == true) System.out.print("Число простое");
         else System.out.print("Число составное");
         scan.close();
     }
@@ -187,16 +187,16 @@ public class Prak1 {
         System.out.print("Введите число: ");
         int obrat = 0;
         int palin = scan.nextInt();
-        int bratpalin = palin;
-        while (palin != 0) {
+        int tpalin = palin;
+        while (tpalin != 0) {
             int A = palin % 10;
             obrat = (obrat * 10) + A;
             palin = palin / 10;
         }
-        if (obrat == bratpalin)
-            System.out.print("Число " + bratpalin + " является полиндромом, т. к, если его перевернуть, то он будет равен " + obrat);
+        if (obrat == tpalin)
+            System.out.print("Число " + tpalin + " является полиндромом, т. к, если его перевернуть, то он будет равен " + obrat);
         else
-            System.out.print("Число " + bratpalin + " не полиндромное, т.к оно не будет таким же как и прошлое, а будет таким: " + obrat);
+            System.out.print("Число " + tpalin + " не полиндромное, т.к оно не будет таким же как и прошлое, а будет таким: " + obrat);
 
         scan.close();
     }
@@ -206,9 +206,9 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите число: ");
-        int love = scan.nextInt();
-        double result = Math.sqrt(love);
-        System.out.print("Корень из числа " + love + " равен " + result);
+        int a = scan.nextInt();
+        double result = Math.sqrt(a);
+        System.out.print("Корень из числа " + a + " равен " + result);
 
         scan.close();
     }
@@ -218,13 +218,13 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите число: ");
-        int oCh = scan.nextInt();
-        int SUM = 0;
-        while (oCh != 0) {
-            SUM += oCh % 10;
-            oCh /= 10;
+        int a = scan.nextInt();
+        int z = 0;
+        while (a != 0) {
+            z += a % 10;
+            a /= 10;
         }
-        System.out.print("Сумма чисел равна: " + SUM);
+        System.out.print("Сумма чисел равна: " + z);
 
         scan.close();
     }
@@ -234,14 +234,14 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите число: ");
-        int face = scan.nextInt();
-        int obratka = 0;
-        while (face != 0) {
-            int A = face % 10;
-            obratka = (obratka * 10) + A;
-            face = face / 10;
+        int v = scan.nextInt();
+        int z = 0;
+        while (v != 0) {
+            int A = v % 10;
+            z = (z * 10) + A;
+            v = v / 10;
         }
-        System.out.print("Обратное число равно " + obratka);
+        System.out.print("Обратное число равно " + z);
 
         scan.close();
     }
@@ -251,14 +251,14 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите число: ");
-        int Liza = scan.nextInt();
+        int a = scan.nextInt();
         int summa = 0;
-        for (int i = 1; i <= Liza / 2; i++) {
-            if (Liza % i == 0)
+        for (int i = 1; i <= a / 2; i++) {
+            if (a % i == 0)
                 summa = summa + i;
         }
-        if (summa == Liza) System.out.print("Число " + Liza + " является совершенным");
-        else System.out.print("Число " + Liza + " не является совершенным");
+        if (summa == a) System.out.print("Число " + a + " является совершенным");
+        else System.out.print("Число " + a + " не является совершенным");
 
         scan.close();
     }
@@ -268,14 +268,14 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите первое число: ");
-        int LA = scan.nextInt();
+        int a = scan.nextInt();
         System.out.print("Введите второе число: ");
-        int LB = scan.nextInt();
-        while (LA != LB) {
-            if (LA > LB) LA = LA - LB;
-            else LB = LB - LA;
+        int v = scan.nextInt();
+        while (a != v) {
+            if (a > v) a = a - v;
+            else a = v - a;
         }
-        System.out.print("НОД равен: " + LA);
+        System.out.print("НОД равен: " + a);
 
         scan.close();
     }
@@ -300,16 +300,16 @@ public class Prak1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите число: ");
-        int lisa = scan.nextInt();
-        int Lisa = lisa * (-1);
-        System.out.print("Изначальное число: " + lisa + "\nПолученное число: " + Lisa);
+        int a = scan.nextInt();
+        int b = a * (-1);
+        System.out.print("Изначальное число: " + a + "\nПолученное число: " + b);
 
         scan.close();
     }
 
     public static void cummpervNchl24() {
+        
         System.out.print("\n-+-Вы запустили двадцать четвёртое задание-+-\n");
-
         Scanner scan = new Scanner(System.in);
         System.out.print("\nВведите первый член прогрессии: ");
         int first = scan.nextInt();
